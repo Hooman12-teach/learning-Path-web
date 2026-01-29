@@ -1,0 +1,39 @@
+.dashboard-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.dashboard-wrapper.dark {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.dashboard-main {
+  display: flex;
+  margin-top: 60px;
+}
+
+.dashboard-content {
+  flex: 1;
+  margin-left: 280px;
+  width: calc(100% - 280px);
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+    margin-left: 70px;
+    width: calc(100% - 70px);
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-main {
+    flex-direction: column;
+  }
+
+  .dashboard-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}

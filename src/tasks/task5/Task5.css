@@ -1,0 +1,10 @@
+.content-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+}
